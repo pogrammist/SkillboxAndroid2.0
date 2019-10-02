@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.example.androin87textview"
+        applicationId "com.example.androin83textview"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
