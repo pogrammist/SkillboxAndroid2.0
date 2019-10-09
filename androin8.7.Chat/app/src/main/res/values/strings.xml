@@ -1,15 +1,28 @@
 <resources>
     <string name="app_name">androin8.7.Chat</string>
-    <string-array name="users">
-        <item>User01</item>
-        <item>User02</item>
-        <item>User03</item>
-        <item>User04</item>
-        <item>User05</item>
-    </string-array>
+
     <string-array name="groups">
         <item>Developer</item>
         <item>HandMade</item>
         <item>Freelancer</item>
     </string-array>
+    <string-array name="users_1">
+        <item>Developer01</item>
+        <item>Developer02</item>
+        <item>Developer03</item>
+        <item>Developer04</item>
+        <item>Developer05</item>
+    </string-array>
+    <string-array name="users_2">
+        <item>HandMade01</item>
+        <item>HandMade02</item>
+        <item>HandMade03</item>
+        <item>HandMade04</item>
+    </string-array>
+    <string-array name="users_3">
+        <item>Freelancer01</item>
+        <item>Freelancer02</item>
+        <item>Freelancer03</item>
+    </string-array>
+
 </resources>
