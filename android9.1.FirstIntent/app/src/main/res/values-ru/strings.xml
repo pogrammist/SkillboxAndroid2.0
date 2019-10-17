@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Сила</string>
+    <string name="choose_the_side">Выбери сторону!</string>
+    <string name="dark_side">Темная сторона</string>
+    <string name="light_side">Светлая сторона</string>
+    <string name="take_the_dark_side">Принять Темную Сторону</string>
+    <string name="take_the_light_side">Принять Светлую Сторону</string>
+    <string name="leave_the_dark_side">Покинуть Темную Сторону</string>
+    <string name="leave_the_light_side">Покинуть Светлую Сторону</string>
+    <string name="back_to_choice">Вернуться к Выбору</string>
+</resources>

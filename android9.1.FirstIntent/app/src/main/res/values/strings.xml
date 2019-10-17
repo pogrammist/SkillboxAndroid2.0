@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Power</string>
+    <string name="choose_the_side">Choose the Side!</string>
+    <string name="dark_side">Dark Side</string>
+    <string name="light_side">Light Side</string>
+    <string name="take_the_dark_side">Take the Dark Side</string>
+    <string name="take_the_light_side">Take to Light Side</string>
+    <string name="leave_the_dark_side">Leave the Dark Side</string>
+    <string name="leave_the_light_side">Leave the Light Side</string>
+    <string name="back_to_choice">Back to Choice</string>
+</resources>
