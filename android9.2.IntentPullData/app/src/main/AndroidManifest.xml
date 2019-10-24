@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android91firstintent">
+    package="com.example.android92intentpulldata">
 
     <application
         android:allowBackup="true"
