@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Star Contacts</string>
+    <string name="create_contact">Create contact</string>
+    <string name="group">Group</string>
+    <string name="name">name</string>
+    <string name="surname">surname</string>
+    <string name="number">number</string>
+    <string name="set_group">Set group</string>
+
+    <string-array name="groups">
+        <item>Jedi</item>
+        <item>Mandalorian</item>
+        <item>Skywalker</item>
+        <item>Sith</item>
+    </string-array>
+</resources>

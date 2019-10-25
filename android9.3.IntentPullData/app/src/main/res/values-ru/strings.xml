@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Галактические Контакты</string>
+    <string name="create_contact">Создать контакт</string>
+    <string name="group">Группа</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="number">Номер</string>
+    <string name="set_group">Задать группу</string>
+
+    <string-array name="groups">
+        <item>Джедай</item>
+        <item>Мандалорец</item>
+        <item>Скайуокер</item>
+        <item>Ситх</item>
+    </string-array>
+</resources>
