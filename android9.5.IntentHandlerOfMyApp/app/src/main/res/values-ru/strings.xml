@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Намеренный слушатель</string>
+    <string name="number">Номер</string>
+    <string name="call">Позвонить</string>
+    <string name="message">Сообщение</string>
+</resources>
