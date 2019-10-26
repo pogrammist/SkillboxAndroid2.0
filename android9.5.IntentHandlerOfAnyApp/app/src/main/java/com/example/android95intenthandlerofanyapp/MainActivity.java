@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onWebSearch(View view) {
-        Intent intentToWebSearch = new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com"));
+        Intent intentToWebSearch = new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.ru"));
         startActivity(Intent.createChooser(intentToWebSearch, "Choose a Browser"));
     }
 
@@ -53,5 +53,10 @@ public class MainActivity extends AppCompatActivity {
 //        callIntent.setData(Uri.parse("tel:" + mEditText.getText()));
 
         startActivity(callIntent);
+    }
+
+    public void onAuthor(View view) {
+        Intent openAuthorActivity = new Intent(this, AuthorActivity.class);
+        startActivity(openAuthorActivity);
     }
 }
