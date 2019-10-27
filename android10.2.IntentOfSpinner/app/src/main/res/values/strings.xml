@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">StarWarsGroups</string>
+    <string name="create_contact">create contact</string>
+    <string name="group">group</string>
+    <string name="name">name</string>
+    <string name="surname">surname</string>
+    <string name="number">number</string>
+    <string name="set_group">set group</string>
+    <string name="show_group">show group</string>
+
+    <string-array name="groups">
+        <item>Jedi</item>
+        <item>Mandalorian</item>
+        <item>Skywalker</item>
+        <item>Sith</item>
+    </string-array>
+
+    <string name="info_jedi">The Jedi are key characters in the Star Wars epic, Peace Knights
+         - members of the Jedi Order, adherents of the Bright Side of the Force. Jedi are able to
+        direct the Force that gives im super powers. The main weapon of the Jedi is a lightsaber.</string>
+
+    <string name="info_mandalorian">Mandalorean is an upcoming American television series in the
+        space opera genre, which is an integral part of the Star Wars universe. The premiere of
+        the series will take place on November 12, 2019 at the Disney + streaming service, which
+        will begin work on the same day.</string>
+
+    <string name="info_skywalker">Anakin Skywalker, who was named Darth Vader in the ranks of the
+        Order of the Sith, is the central character in the first 6 films of the Star Wars series.
+        Also appears in the movie Rogue One. The Star Wars movie epic demonstrates his formation
+        as a Jedi Knight, his transition to the Dark Side of the Force, and his final redemption.</string>
+
+    <string name="info_sith">Sith are fictional characters from the Star Wars universe, adepts of
+        the dark side of the Force. The Sith are the implacable opponents of the Jedi, some of the
+        Sith themselves were once the Jedi, until the dark side of the Force carried them away.</string>
+</resources>
