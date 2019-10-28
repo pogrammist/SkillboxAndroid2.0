@@ -6,8 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
-public class SecondActivity extends AppCompatActivity {
+public class ContactActivity extends AppCompatActivity {
 
     EditText editTextName;
     EditText editTextCode;
@@ -15,18 +16,19 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_contact);
 
         editTextName = findViewById(R.id.pushName);
         editTextCode = findViewById(R.id.pushCode);
     }
 
-    public void openThirdActivity(View view) {
-        Intent thirdActivityIntent = new Intent(this, ThirdActivity.class);
+    public void onShowContactActivity(View view) {
+        Intent showContactActivityIntent = new Intent(this, ShowContactActivity.class);
         String textName = editTextName.getText().toString();
-        int intCode = Integer.parseInt(editTextCode.getText().toString());
-        thirdActivityIntent.putExtra("Name", textName);
-        thirdActivityIntent.putExtra("Code", intCode);
-        startActivity(thirdActivityIntent);
+        String intCode = editTextCode.getText().toString();
+        showContactActivityIntent.putExtra("Name", textName);
+        showContactActivityIntent.putExtra("Code", intCode);
+        startActivity(showContactActivityIntent);
+        this.finish();
     }
 }

@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorRed"
-    tools:context=".FirstActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/star_jedi_regular"
-        android:text="First Activity"
+        android:text="Main"
         android:textColor="@color/colorYellow"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -28,8 +28,8 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/colorBlack"
-        android:onClick="openSecondActivity"
-        android:text="open Second Activity"
+        android:onClick="onContactActivity"
+        android:text="Create Contact"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

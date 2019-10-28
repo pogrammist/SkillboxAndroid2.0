@@ -6,16 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class FirstActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first);
+        setContentView(R.layout.activity_main);
     }
 
-    public void openSecondActivity(View view) {
-        Intent secondActivityIntent = new Intent(this, SecondActivity.class);
-        startActivity(secondActivityIntent);
+    public void onContactActivity(View view) {
+        Intent contactActivityIntent = new Intent(this, ContactActivity.class);
+        startActivity(contactActivityIntent);
+        this.finish();
     }
 }

@@ -4,58 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorYellow"
-    tools:context=".ThirdActivity">
+    android:background="@color/colorBlack"
+    tools:context=".ContactActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/star_jedi_regular"
-        android:text="Third Activity"
+        android:text="Contact"
         android:textColor="@color/colorRed"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/pullName"
+        app:layout_constraintBottom_toTopOf="@+id/pushCode"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/pullName"
+    <EditText
+        android:id="@+id/pushName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:text="Name"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/pullCode"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/booleanCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Boolean"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:background="@color/colorRed"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pushCode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pullCode" />
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/pullCode"
+    <EditText
+        android:id="@+id/pushCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Code"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:background="@color/colorRed"
+        android:ems="10"
+        android:hint="Code"
+        android:inputType="number"
+        android:maxLength="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/leaveTheLightSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorRed"
+        android:onClick="onShowContactActivity"
+        android:text="Show Contact"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pushCode" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
