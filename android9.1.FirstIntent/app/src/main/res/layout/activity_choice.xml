@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlack"
-    tools:context=".SecondActivity">
+    android:background="@color/colorRed"
+    tools:context=".СhoiceActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/star_jedi_regular"
-        android:text="@string/dark_side"
-        android:textColor="@color/colorRed"
+        android:text="@string/choose_the_side"
+        android:textColor="@color/colorYellow"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,29 +21,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/backToChoice"
+        android:id="@+id/takeTheLightSide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/colorYellow"
-        android:onClick="openFirstActivity"
-        android:text="@string/back_to_choice"
-        android:textColor="@color/colorRed"
+        android:onClick="onLightSideActivity"
+        android:text="@string/take_the_light_side"
+        android:textColor="@color/colorBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/leaveTheLightSide"
+        android:id="@+id/takeTheDarkSide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/colorRed"
-        android:onClick="openThirdActivity"
-        android:text="@string/leave_the_dark_side"
+        android:background="@color/colorBlack"
+        android:onClick="onDarkSideActivity"
+        android:text="@string/take_the_dark_side"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
