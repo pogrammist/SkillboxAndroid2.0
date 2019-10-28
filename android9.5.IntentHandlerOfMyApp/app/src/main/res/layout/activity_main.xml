@@ -10,7 +10,7 @@
         android:id="@+id/numberTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="number"
+        android:text="@string/number"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,9 +22,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="message"
+        android:text="@string/message"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberTextView" />
+
+    <TextView
+        android:id="@+id/showNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number"
+        app:layout_constraintBottom_toBottomOf="@+id/numberTextView"
+        app:layout_constraintEnd_toStartOf="@+id/numberTextView"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/showMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        app:layout_constraintBottom_toBottomOf="@+id/messageTextView"
+        app:layout_constraintEnd_toStartOf="@+id/messageTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
