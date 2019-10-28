@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='android9.1.FirstIntent'
+rootProject.name='android9.2.IntentPullData'
