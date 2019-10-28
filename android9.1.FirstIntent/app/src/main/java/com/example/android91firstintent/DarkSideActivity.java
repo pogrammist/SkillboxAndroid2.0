@@ -15,14 +15,14 @@ public class DarkSideActivity extends AppCompatActivity {
     }
 
     public void onChoiceActivity(View view) {
-        Intent firstActivityIntent = new Intent(this, СhoiceActivity.class);
-        startActivity(firstActivityIntent);
+        Intent choiceActivityIntent = new Intent(this, СhoiceActivity.class);
+        startActivity(choiceActivityIntent);
         this.finish();
     }
 
     public void onLightSideActivity(View view) {
-        Intent thirdActivityIntent = new Intent(this, LightSideActivity.class);
-        startActivity(thirdActivityIntent);
+        Intent lightsideActivityIntent = new Intent(this, LightSideActivity.class);
+        startActivity(lightsideActivityIntent);
         this.finish();
     }
 }

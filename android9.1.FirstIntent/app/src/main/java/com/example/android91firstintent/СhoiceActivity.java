@@ -15,13 +15,13 @@ public class СhoiceActivity extends AppCompatActivity {
     }
 
     public void onDarkSideActivity(View view) {
-        Intent secondActivityIntent = new Intent(this, DarkSideActivity.class);
-        startActivity(secondActivityIntent);
+        Intent darksideActivityIntent = new Intent(this, DarkSideActivity.class);
+        startActivity(darksideActivityIntent);
         this.finish();
     }
     public void onLightSideActivity(View view) {
-        Intent thirdActivityIntent = new Intent(this, LightSideActivity.class);
-        startActivity(thirdActivityIntent);
+        Intent lightActivityIntent = new Intent(this, LightSideActivity.class);
+        startActivity(lightActivityIntent);
         this.finish();
     }
 }
