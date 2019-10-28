@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorRed"
-    tools:context=".FirstActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/groupTextView"
@@ -73,7 +73,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/colorBlack"
-        android:onClick="openSecondActivity"
+        android:onClick="onCreateContactActivity"
         android:text="@string/create_contact"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,7 +86,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/colorBlack"
-        android:onClick="openThirdActivity"
+        android:onClick="onSetGroupActivity"
         android:text="@string/set_group"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"

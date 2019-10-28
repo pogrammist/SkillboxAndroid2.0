@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorYellow"
-    tools:context=".ThirdActivity">
+    tools:context=".SetGroupActivity">
 
     <Button
-        android:onClick="openFirstActivity"
+        android:onClick="onMainActivity"
         android:id="@+id/leaveTheLightSide2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
