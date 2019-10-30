@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class ContactActivity extends AppCompatActivity {
 
@@ -24,10 +23,18 @@ public class ContactActivity extends AppCompatActivity {
 
     public void onShowContactActivity(View view) {
         Intent showContactActivityIntent = new Intent(this, ShowContactActivity.class);
-        String textName = editTextName.getText().toString();
-        String intCode = editTextCode.getText().toString();
-        showContactActivityIntent.putExtra("Name", textName);
-        showContactActivityIntent.putExtra("Code", intCode);
+        Bundle extras = new Bundle();
+
+        String textName = String.valueOf(editTextName.getText());
+        String textCode = String.valueOf(editTextCode.getText());
+
+        int intCode = textCode.equals("") ? 0 : Integer.parseInt(textCode);
+
+        extras.putString("Name", textName);
+        extras.putInt("Code", intCode);
+
+        showContactActivityIntent.putExtras(extras);
+
         startActivity(showContactActivityIntent);
         this.finish();
     }
