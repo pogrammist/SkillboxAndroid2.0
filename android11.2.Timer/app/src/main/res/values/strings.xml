@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="start_message">Timer started</string>
+    <string name="stop_message">Timer stopped</string>
+    <string name="pause_message">Timer paused</string>
+    <string name="timer" translatable="false">00:00:00</string>
+</resources>
