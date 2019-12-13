@@ -9,9 +9,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int iterations = 0;
-    boolean beginnig;
     TextView messageTextView;
+
+    int iterations = 0;
+    boolean beginning;
+    String message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         messageTextView = findViewById(R.id.messageTextView);
+
+        if (savedInstanceState != null) {
+            iterations = savedInstanceState.getInt("iterations", iterations);
+            beginning = savedInstanceState.getBoolean("beginning", beginning);
+            messageTextView.setText(savedInstanceState.getString("message", message));
+        }
 
         begin();
     }
@@ -30,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 timerTextView.setText(String.valueOf(iterations));
-                if (beginnig) {
+                if (beginning) {
                     iterations++;
                 }
                 handler.postDelayed(this, 1000);
@@ -39,18 +47,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickStart(View view) {
-        beginnig = true;
+        beginning = true;
         messageTextView.setText(R.string.start_message);
     }
 
     public void onClickStop(View view) {
-        beginnig = false;
+        beginning = false;
         iterations = 0;
         messageTextView.setText(R.string.stop_message);
     }
 
     public void onClickPause(View view) {
-        beginnig = false;
+        beginning = false;
         messageTextView.setText(R.string.pause_message);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("iterations", iterations);
+        outState.putBoolean("beginning", beginning);
+        outState.putString("message", String.valueOf(messageTextView.getText()));
     }
 }
