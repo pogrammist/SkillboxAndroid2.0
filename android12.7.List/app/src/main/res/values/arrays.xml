@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_view_items">
+        <item>Продукты</item>
+        <item>Одежда</item>
+        <item>Инструменты</item>
+        <item>Хозтовары</item>
+    </array>
+</resources>
